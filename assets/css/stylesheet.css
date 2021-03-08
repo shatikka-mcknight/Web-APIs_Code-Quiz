@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(171, 201, 183, 0.877);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.hr {
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+.container #questions {
+    font-size: 25px;
+    
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    width: 250px;
+    font-size: 16px;
+    color: blue;
+    border: 1px solid #125478;
+    border-radius: 5px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px;
+    background-color: purple;
+    display: block;
+}
+
+#progress {
+    color: #2b2b2b;
+}
