@@ -1,7 +1,23 @@
+//Start quiz with hide start quix search and start question
+var startBtn = document.querySelector("#start-test");
+var questions = document.querySelector("#questions");
+//show question
+var questionsEl = document.querySelector("#questions");
+var answerChoices = document.querySelector("#answer-buttons")
+startBtn.addEventListener('click', startTest)
+
+function startTest() {
+    document.querySelector("#start-quiz").style.display = 'none';
+    document.querySelector("#quiz-container").style.display = 'block';
+    Quiz()
+    
+}
+
+
 //funtion for choosing the corrcet answer
 function Question(text, choices, answer) {
     this.text = text;
-    this.choices = choices;
+    this.choice = choices;
     this.answer = answer;
 }
 
@@ -39,26 +55,17 @@ Quiz.prototype.guess = function (answer) {
 
 //funtion to help populate the question that will display on quiz
 
-function showQuestion () {
-    if (quiz.isEnded()) {
-        //showScores();
-    }
-    else {
-        //show question
-        var questionsEl = document.querySelector("#questions");
-        questionsEl.innerHTML = quiz.getQuestionIndex().text;
-
-        //show question choices
-        var choices = quiz.getQuestionIndex().choices;
-        for (var i = 0; i< choices.length; i++) 
-        {
-            var questionsEl = document.querySelector("#choice" + i);
-
-            questionsEl.innerHTML = choice[i];
+function showQuestion (questions) {
+        questionsEl.innerHTML = answerChoices.questions;
+    questions.answer.forEach(correctAnswer => {
+            var span = document.createElement('span')
+            span.innerHTML = document.querySelector('choice').text
+            if (correctAnswer) {
+                button.dataset.correct = correctAnswer
+            }
+        })
         }
         
-    }
-}
 
 var questions = [
     new Question("Commonly used data types DO NOT include:", ["string", "booleans", "alerts", "numbers"], "booleans"),

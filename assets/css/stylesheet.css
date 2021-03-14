@@ -1,16 +1,27 @@
 body{
     background-color: rgba(171, 201, 183, 0.877);
     font-family: 'Roboto', sans-serif;
+    color: #231F20;
 }
 
 .container {
-
     width: 800px;
     height: 500px;
     margin: 0 auto;
     padding: 50px;
 }
 
+
+#start-quiz {
+    text-align: center;
+}   
+
+#start-quiz button {
+    padding: 5px 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #125334;
+}
 
 .hr {
     margin-top: 20px;
@@ -19,10 +30,15 @@ body{
 .container h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
+    color: #125334;
 }
-.container #questions {
+.quiz-container #questions {
     font-size: 25px;
     
+}
+
+.hide {
+    display: none;
 }
 
 #btn1, #btn2, #btn3, #btn4 {

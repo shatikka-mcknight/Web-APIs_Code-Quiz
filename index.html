@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
 </head>
 <body>
-    <div class="container">
-        <div id="quiz">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by 10 seconds!</p>
-            
-            <hr class="hr">
-
+        <div class="container">
+          <div id="start-quiz">
+          <h1>Coding Quiz Challenge</h1>
+            <div>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by 10 seconds!</p>
+            </div>
+            <button id="start-test">Start Now</button>
+          </div>
+          <div id="quiz-container" class="hide">
             <p id="questions"></p>
-
-            <div class="buttons">
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
-                <button id="btn4"><span id="choice4"></span></button>
+            <div id="answer-buttons">
+                <button id="btn1"></button>
+                <button id="btn2"></button>
+                <button id="btn3"></button>
+                <button id="btn4"></button>
             </div>
 
             <hr class="hr"> 
@@ -29,8 +30,8 @@
             <footer>
                 <p id="progress">Question x of y.</p>
             </footer>
-
         </div>
+       
 
     </div>
 
