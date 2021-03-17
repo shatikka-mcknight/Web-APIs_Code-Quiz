@@ -3,7 +3,7 @@ var startBtn = document.querySelector("#start-test");
 var questions = document.querySelector("#questions");
 //show question
 var questionsEl = document.querySelector("#questions");
-var answerChoices = document.querySelector("#answer-buttons")
+var answerChoices = new Array();
 startBtn.addEventListener('click', startTest)
 
 function startTest() {
@@ -54,17 +54,9 @@ Quiz.prototype.guess = function (answer) {
 }
 
 //funtion to help populate the question that will display on quiz
-
-function showQuestion (questions) {
-        questionsEl.innerHTML = answerChoices.questions;
-    questions.answer.forEach(correctAnswer => {
-            var span = document.createElement('span')
-            span.innerHTML = document.querySelector('choice').text
-            if (correctAnswer) {
-                button.dataset.correct = correctAnswer
-            }
-        })
-        }
+function showQuestion() {
+    document.getElementById("questions").innerHTML = questions.text;
+}
         
 
 var questions = [
