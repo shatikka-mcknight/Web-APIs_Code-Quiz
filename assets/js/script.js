@@ -123,16 +123,16 @@ function guessAnswer(id, guessAnswer) {
         quiz.guessAnswer(guessAnswer);
         displayQuestion();
 
-        if (button.innerHTML === questions[questionIndex].correctAnswer) {
-            //alert("Correct");
-            this.questionIndex++;
-            displayQuestion();
-        } else {
-            //alert("Wrong!");
-            secondsRemain -= 10;
-            this.questionIndex++;
-            displayQuestion();
-                }
+        // if (button.innerHTML === questions[questionIndex].correctAnswer) {
+        //     //alert("Correct");
+        //     this.questionIndex++;
+        //     displayQuestion();
+        // } else {
+        //     //alert("Wrong!");
+        //     secondsRemain -= 10;
+        //     this.questionIndex++;
+        //     displayQuestion();
+        //         }
             }
 };
 
